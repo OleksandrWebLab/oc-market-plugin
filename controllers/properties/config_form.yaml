@@ -1,0 +1,17 @@
+name: Property
+form: $/popcornphp/market/models/property/fields.yaml
+modelClass: PopcornPHP\Market\Models\Property
+defaultRedirect: popcornphp/market/properties
+
+create:
+    title: Create Property
+    redirect: popcornphp/market/property/update/:id
+    redirectClose: popcornphp/market/properties
+
+update:
+    title: Edit Property
+    redirect: popcornphp/market/property
+    redirectClose: popcornphp/market/properties
+
+preview:
+    title: Preview Property

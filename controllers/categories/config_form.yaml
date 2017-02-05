@@ -1,0 +1,17 @@
+name: Category
+form: $/popcornphp/market/models/category/fields.yaml
+modelClass: PopcornPHP\Market\Models\Category
+defaultRedirect: popcornphp/market/categories
+
+create:
+    title: Create Category
+    redirect: popcornphp/market/categories/update/:id
+    redirectClose: popcornphp/market/categories
+
+update:
+    title: Edit Category
+    redirect: popcornphp/market/categories
+    redirectClose: popcornphp/market/categories
+
+preview:
+    title: Preview Category

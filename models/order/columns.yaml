@@ -1,0 +1,30 @@
+columns:
+    id:
+        label: ID
+        searchable: true
+        
+    name:
+        label: Customer
+        relation: relUser
+        select: email
+
+    phone:
+        label: Phone
+        invisible: true
+
+    status:
+        label: Status
+
+    total_cost:
+        label: Total cost
+
+    total_profit:
+        label: Total profit
+
+    created_at:
+        label: Created at
+        invisible: true
+
+    updated_at:
+        label: Updated at
+        invisible: true

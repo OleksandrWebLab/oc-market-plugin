@@ -1,0 +1,17 @@
+name: Product
+form: $/popcornphp/market/models/product/fields.yaml
+modelClass: PopcornPHP\Market\Models\Product
+defaultRedirect: popcornphp/market/products
+
+create:
+    title: Create Product
+    redirect: popcornphp/market/products/update/:id
+    redirectClose: popcornphp/market/products
+
+update:
+    title: Edit Product
+    redirect: popcornphp/market/products
+    redirectClose: popcornphp/market/products
+
+preview:
+    title: Preview Product

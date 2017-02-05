@@ -1,0 +1,131 @@
+fields:
+
+tabs:
+    fields:
+        name:
+            label: Name
+            tab: General
+            span: left
+            type: text
+
+        slug:
+            label: Code
+            tab: General
+            span: right
+            type: text
+            preset: name
+
+        vendor_code:
+            label: Vendor code
+            tab: General
+            span: left
+            type: text
+
+        is_enabled:
+            label: Is enabled?
+            comment: The main switch product visibility
+            tab: General
+            type: switch
+
+        short_description:
+            label: Short description
+            tab: General
+            type: textarea
+            size: small
+
+        description:
+            label: Full description
+            tab: General
+            type: richeditor
+            size: huge
+
+        meta_title:
+            label: Meta title
+            tab: Meta
+            span: left
+
+        meta_keyword:
+            label: Meta keywords
+            tab: Meta
+            span: right
+
+        meta_description:
+            label: Meta description
+            tab: Meta
+            type: richeditor
+
+        relCategory:
+            label: Category
+            tab: Filter
+            type: dropdown
+
+        relProperty_section@create:
+            label: Filter field
+            comment: The filter field will be visible after create this product
+            tab: Filter
+            type: section
+
+        relProperty:
+            tab: Filter
+            dependsOn: relCategory
+            type: partial
+            path: $/popcornphp/market/models/product/_field_relProperty.htm
+
+        price_section:
+            label: Default price
+            comment: Setting the price of goods in the normal mode
+            tab: Price
+            type: section
+
+        price_purchase:
+            label: Price purchase
+            tab: Price
+            span: left
+            type: text
+
+        free_shipping:
+            label: Free shipping
+            tab: Price
+            span: right
+            type: dropdown
+            options:
+                - No
+                - Yes
+
+        markup_percent:
+            label: Markup percent
+            tab: Price
+            span: left
+            type: text
+
+        markup_fixed:
+            label: Markup fixed
+            tab: Price
+            span: right
+            type: text
+
+        discount_percent:
+            label: Discount percent
+            tab: Price
+            span: left
+            type: text
+
+        discount_fixed:
+            label: Discount fixed
+            tab: Price
+            span: right
+            type: text
+
+secondaryTabs:
+    fields:
+        images_section:
+            label: Images
+            comment: The first image will be used as the main
+            tab: Images
+            type: section
+
+        images:
+            tab: Images
+            span: full
+            type: fileupload
+            mode: image

@@ -1,0 +1,45 @@
+fields:
+    relUser:
+        label: Customer
+        type: relation
+        span: left
+
+    status:
+        label: Status
+        type: dropdown
+        span: right
+        options:
+            completed: Completed
+            processing: Processing
+            canceled: Canceled
+
+tabs:
+    fields:
+        relProduct@update:
+            tab: Product
+            type: partial
+            path: $/popcornphp/market/models/order/_field_relProduct.htm
+
+        phone:
+            label: Phone
+            tab: Contacts
+            span: left
+
+        city:
+            label: City
+            tab: Delivery
+            span: left
+
+        address:
+            label: Address
+            tab: Delivery
+            type: textarea
+            span: left
+            size: small
+
+        comment:
+            label: Comment
+            tab: Delivery
+            type: textarea
+            span: left
+            size: small

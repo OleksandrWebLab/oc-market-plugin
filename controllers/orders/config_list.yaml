@@ -1,0 +1,19 @@
+title: Manage Orders
+modelClass: PopcornPHP\Market\Models\Order
+list: $/popcornphp/market/models/order/columns.yaml
+recordUrl: popcornphp/market/orders/update/:id
+noRecordsMessage: backend::lang.list.no_records
+recordsPerPage: 20
+showSetup: true
+showSorting: true
+#showCheckboxes: true
+
+#defaultSort:
+#    column: created_at
+#    direction: desc
+
+toolbar:
+    buttons: list_toolbar
+
+    search:
+        prompt: backend::lang.list.search_prompt

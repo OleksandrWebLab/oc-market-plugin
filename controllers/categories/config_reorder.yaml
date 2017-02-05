@@ -1,0 +1,6 @@
+title: Reorder categories
+modelClass: PopcornPHP\Market\Models\Category
+nameFrom: name
+
+toolbar:
+    buttons: reorder_toolbar

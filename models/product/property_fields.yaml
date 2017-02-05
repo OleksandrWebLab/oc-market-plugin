@@ -1,0 +1,5 @@
+fields:
+    pivot[value_id]:
+        label: Value
+        type: dropdown
+        options: getValues

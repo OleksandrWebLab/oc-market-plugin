@@ -1,0 +1,42 @@
+fields:
+    pivot_section:
+        label: Custom price settings
+        type: section
+
+    pivot[price_purchase]:
+        label: Price purchase
+        type: number
+        span: left
+
+    pivot[free_shipping]:
+        label: Free shipping
+        span: right
+        type: dropdown
+        options:
+            false: No
+            true: Yes
+
+    pivot[markup_percent]:
+        label: Markup percent
+        type: number
+        span: left
+
+    pivot[markup_fixed]:
+        label: Markup fixed
+        type: number
+        span: right
+
+    pivot[discount_percent]:
+        label: Discount percent
+        type: number
+        span: left
+
+    pivot[discount_fixed]:
+        label: Discount fixed
+        type: number
+        span: right
+
+    pivot[quantity]:
+        label: Quantity
+        type: number
+        span: full

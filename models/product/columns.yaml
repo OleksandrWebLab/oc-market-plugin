@@ -1,0 +1,15 @@
+columns:
+    id:
+        label: ID
+
+    name:
+        label: Name
+
+    price_purchase:
+        label: Price purchase
+
+    price_selling:
+        label: Price selling
+
+    profit:
+        label: Profit

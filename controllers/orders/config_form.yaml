@@ -1,0 +1,17 @@
+name: Order
+form: $/popcornphp/market/models/order/fields.yaml
+modelClass: PopcornPHP\Market\Models\Order
+defaultRedirect: popcornphp/market/orders
+
+create:
+    title: Create Order
+    redirect: popcornphp/market/orders/update/:id
+    redirectClose: popcornphp/market/orders
+
+update:
+    title: Edit Order
+    redirect: popcornphp/market/orders
+    redirectClose: popcornphp/market/orders
+
+preview:
+    title: Preview Order

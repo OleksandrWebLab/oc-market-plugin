@@ -1,0 +1,32 @@
+columns:
+    pivot[product_id]:
+        label: ID
+        type: number
+        sortable: false
+
+    name:
+        label: Name
+
+    pivot[price_purchase]:
+        label: Price purchase
+        type: number
+
+    pivot[price_selling]:
+        label: Price selling
+        type: number
+
+    pivot[profit]:
+        label: Profit
+        type: number
+
+    pivot[quantity]:
+        label: Quantity
+        type: number
+
+    pivot[total_cost]:
+        label: Total cost
+        type: number
+
+    pivot[total_profit]:
+        label: Total profit
+        type: number

@@ -1,0 +1,10 @@
+relProduct:
+    label: products
+    view:
+        list: $/popcornphp/market/models/order/product_columns.yaml
+        toolbarButtons: add|remove
+    manage:
+        list: $/popcornphp/market/models/product/columns.yaml
+        recordsPerPage: 10
+    pivot:
+        form: $/popcornphp/market/models/order/product_fields.yaml

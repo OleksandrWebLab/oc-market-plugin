@@ -1,0 +1,23 @@
+fields:
+    name:
+        label: Name
+        span: left
+
+    slug:
+        label: Code
+        span: right
+        preset: name
+
+    is_filter_enable:
+        label: Use this property as filter
+        type: switch
+        span: left
+
+    is_show_full:
+        label: Show list of filter values
+        type: switch
+        span: right
+
+    relPropertyValue:
+        type: partial
+        path: $/popcornphp/market/models/property/_field_relPropertyValue.htm

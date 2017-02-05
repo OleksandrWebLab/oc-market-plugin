@@ -1,0 +1,6 @@
+relPropertyValue:
+    label: values
+    view:
+        list: $/popcornphp/market/models/propertyvalue/columns.yaml
+        toolbarButtons: create|delete
+    form: $/popcornphp/market/models/propertyvalue/fields.yaml

@@ -1,0 +1,13 @@
+{
+    "name": "popcornphp/market",
+    "description": "Free market for OctoberCMS",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alexander Shapoval",
+            "email": "popcornphp@gmail.com"
+        }
+    ],
+    "require": {}
+}

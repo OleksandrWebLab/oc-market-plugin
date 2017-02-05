@@ -1,0 +1,7 @@
+columns:
+    name:
+        label: Name
+
+    value_id:
+        label: Value
+        sortable: false

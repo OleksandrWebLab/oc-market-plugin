@@ -1,0 +1,10 @@
+relProperty:
+    label: 'property'
+    view:
+        list: $/popcornphp/market/models/product/property_columns.yaml
+        toolbarButtons: add|remove
+    manage:
+        list: $/popcornphp/market/models/property/columns.yaml
+        recordsPerPage: 10
+    pivot:
+        form: $/popcornphp/market/models/product/property_fields.yaml

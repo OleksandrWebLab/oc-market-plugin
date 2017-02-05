@@ -1,0 +1,52 @@
+fields:
+    name:
+        label: Name
+        span: left
+
+    slug:
+        label: Slug
+        span: right
+        preset: name
+
+tabs:
+    fields:
+        description:
+            label: Description
+            tab: General
+            type: richeditor
+            size: large
+
+        relProperty:
+            tab: Filter
+            type: partial
+            path: $/popcornphp/market/models/category/_field_relProperty.htm
+
+        meta_title:
+            label: Meta title
+            tab: Meta
+            span: left
+
+        meta_keywords:
+            label: Meta keywords
+            tab: Meta
+            span: right
+
+        meta_description:
+            label: Meta description
+            tab: Meta
+            type: textarea
+            size: tiny
+
+secondaryTabs:
+    fields:
+        image:
+            label: Image
+            type: fileupload
+            mode: image
+
+        icon:
+            label: Icon
+            type: fileupload
+            mode: image
+            imageHeight: 50
+            imageWidth: 50

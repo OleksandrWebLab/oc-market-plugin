@@ -1,0 +1,9 @@
+columns:
+    id:
+        label: ID
+
+    name:
+        label: Name
+
+    slug:
+        label: Code
