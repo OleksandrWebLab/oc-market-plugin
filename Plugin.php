@@ -10,19 +10,21 @@ class Plugin extends PluginBase
     public function pluginDetails()
     {
         return [
-            'name' => 'Market',
+            'name'        => 'Market',
             'description' => 'Free market for October CMS',
-            'author' => 'Alexander Shapoval',
-            'icon' => 'icon-shopping-cart'
+            'author'      => 'Alexander Shapoval',
+            'icon'        => 'icon-shopping-cart',
+            'homepage'    => 'https://popcornphp.github.io',
         ];
     }
 
-    public function registerComponents() {
+    public function registerComponents()
+    {
         return [
-            'PopcornPHP\Market\Components\Basket' => 'marketBasket',
+            'PopcornPHP\Market\Components\Basket'   => 'marketBasket',
             'PopcornPHP\Market\Components\Category' => 'marketCategory',
-            'PopcornPHP\Market\Components\Product' => 'marketProduct',
-            'PopcornPHP\Market\Components\Search' => 'marketSearch',
+            'PopcornPHP\Market\Components\Product'  => 'marketProduct',
+            'PopcornPHP\Market\Components\Search'   => 'marketSearch',
         ];
     }
 
@@ -35,33 +37,33 @@ class Plugin extends PluginBase
     {
         return [
             'market' => [
-                'label' => 'Market',
-                'url' => Backend::url('popcornphp/market/products'),
-                'icon' => 'icon-shopping-cart',
-                'iconSvg' => 'plugins/popcornphp/market/assets/images/icon.svg',
+                'label'       => 'Market',
+                'url'         => Backend::url('popcornphp/market/products'),
+                'icon'        => 'icon-shopping-cart',
+                'iconSvg'     => 'plugins/popcornphp/market/assets/images/icon.svg',
                 'permissions' => ['popcornphp.market.*'],
-                'order' => 100,
+                'order'       => 100,
 
                 'sideMenu' => [
-                    'products' => [
+                    'products'   => [
                         'label' => 'Products',
-                        'icon' => 'icon-cube',
-                        'url' => Backend::url('popcornphp/market/products')
+                        'icon'  => 'icon-cube',
+                        'url'   => Backend::url('popcornphp/market/products'),
                     ],
-                    'orders' => [
+                    'orders'     => [
                         'label' => 'Orders',
-                        'icon' => 'icon-shopping-cart',
-                        'url' => Backend::url('popcornphp/market/orders')
+                        'icon'  => 'icon-shopping-cart',
+                        'url'   => Backend::url('popcornphp/market/orders'),
                     ],
                     'categories' => [
                         'label' => 'Categories',
-                        'icon' => 'icon-archive',
-                        'url' => Backend::url('popcornphp/market/categories')
+                        'icon'  => 'icon-archive',
+                        'url'   => Backend::url('popcornphp/market/categories'),
                     ],
                     'properties' => [
                         'label' => 'Properties',
-                        'icon' => 'icon-stack-overflow',
-                        'url' => Backend::url('popcornphp/market/properties')
+                        'icon'  => 'icon-stack-overflow',
+                        'url'   => Backend::url('popcornphp/market/properties'),
                     ],
                 ],
             ],

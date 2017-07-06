@@ -1,13 +1,13 @@
 2017.01.1:
-  - Migration v1.0
-  - migration_category_1_0.php
-  - migration_property_1_0.php
-  - migration_order_1_0.php
-  - migration_product_1_0.php
-  - migration_rel_category_property_1_0.php
-  - migration_rel_order_product_1_0.php
-  - migration_rel_product_property_1_0.php
+    - Migration v1.0
+    - migration_category_1_0.php
+    - migration_property_1_0.php
+    - migration_order_1_0.php
+    - migration_product_1_0.php
+    - migration_rel_category_property_1_0.php
+    - migration_rel_order_product_1_0.php
+    - migration_rel_product_property_1_0.php
 
-#  - seeder_category_1_0.php
-#  - seeder_property_1_0.php
-#  - seeder_product_1_0.php
+#    - seeder_category_1_0.php
+#    - seeder_property_1_0.php
+#    - seeder_product_1_0.php

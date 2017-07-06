@@ -27,7 +27,7 @@ class Migration_Rel_Order_Product_1_0 extends Migration
 
             $table->timestamps();
 
-            $table->primary(['order_id', 'product_id']);
+            $table->primary(['order_id', 'product_id'], 'order_product');
         });
     }
 

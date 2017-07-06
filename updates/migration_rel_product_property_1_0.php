@@ -10,12 +10,11 @@ class Migration_Rel_Product_Property_1_0 extends Migration
     {
         Schema::create('popcornphp_market_rel_product_property', function(Blueprint $table) {
             $table->engine = 'InnoDB';
-
             $table->integer('product_id')->unsigned();
             $table->integer('property_id')->unsigned();
             $table->integer('value_id')->unsigned();
 
-            $table->primary(['product_id', 'property_id']);
+            $table->primary(['product_id', 'property_id'], 'product_property');
         });
     }
 
